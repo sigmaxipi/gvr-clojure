@@ -11,8 +11,10 @@
   :javac-options ["-target" "1.6" "-source" "1.6" "-Xlint:-options"]
   :plugins [[lein-droid "0.4.6"]]
 
+  :repositories [["googlevr" {:url "http://google.bintray.com/googlevr/"}]]
   :dependencies [[org.clojure-android/clojure "1.7.0-r4"]
-                 [neko/neko "4.0.0-alpha5"]]
+                 [neko/neko "4.0.0-alpha5"]
+                 [com.google.vr/sdk-base "1.0.3" :extension "aar"]]
   :profiles {:default [:dev]
 
              :dev
