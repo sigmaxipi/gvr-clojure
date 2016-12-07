@@ -45,7 +45,7 @@
 
 
 ; Define Android Activity using leindroid macro
-(defactivity my.company.app.MinGvrActivity
+(defactivity me.sxp.gvrclojure.MinGvrActivity
   :key :main
   :extends com.google.vr.sdk.base.GvrActivity
 

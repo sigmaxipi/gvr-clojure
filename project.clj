@@ -14,7 +14,7 @@
   :repositories [["googlevr" {:url "http://google.bintray.com/googlevr/"}]]
   :dependencies [[org.clojure-android/clojure "1.7.0-r4"]
                  [neko/neko "4.0.0-alpha5"]
-                 [com.google.vr/sdk-base "1.0.3" :extension "aar"]]
+                 [com.google.vr/sdk-base "1.10.0" :extension "aar"]]
   :profiles {:default [:dev]
 
              :dev

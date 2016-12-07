@@ -1,6 +1,6 @@
 # MinGvrApp
 
-This is a minimal Clojure + Android + GVR application.
+This is a minimal Clojure + Android + GVR application. It uses the official Google VR SDK at https://github.com/googlevr/gvr-android-sdk but Clojure is an unofficial and unsupported platform.
 
 ## Background
 
@@ -26,7 +26,7 @@ This will add the google.bintray.com/googlevr repo and download the sdk-base lib
 
 1. Edit your **src/clojure/my/company/app/main.clj** as desired. **src/clojure/me/sxp/gvrclojure/main.clj** in this repo shows a basic example that renders a different color for each eye in a Cardboard app. Using the Cardboard Trigger input will toggle monoscopic rendering mode.
 1. Run `lein droid doall` as usual to build, install, and run this new app.
-1. Use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) to change the app while it's running. Run `lein droid repl` to launch a Clojure REPL and connect to the app via ADB. Then type the following commands into the prompt and note how the left eye's color changes.
+1. Use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) to change the app while it's running. Run `lein droid repl` to launch a Clojure REPL and connect to the app via ADB. Then type the following commands into the prompt and note how the left eye's color changes. Make sure touse the right namespace for the `in-ns` command below. It should match your **main.clj** namespace.
 
   ```
   REPL-y 0.3.7, nREPL 0.2.10
@@ -41,7 +41,7 @@ This will add the google.bintray.com/googlevr repo and download the sdk-base lib
   user=> (in-ns 'my.company.app.main)
   #object[clojure.lang.Namespace 0x2f87340 "my.company.app.main"]
 
-  my.company.app.main=> (def my.company.app.main/leftColor [1 1 1 1])
+  my.company.app.main=> (def leftColor [1 1 1 1])
   #'my.company.app.main/leftColor
   ```
 
