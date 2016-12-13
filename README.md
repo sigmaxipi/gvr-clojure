@@ -5,9 +5,9 @@ This is a minimal Clojure + Android + GVR application. It uses the official Goog
 ## Background
 
 * Clojure is a Lisp that targets the JVM: http://clojure.org/
-* Brave Clojure has a good crash course: http://www.braveclojure.com/do-things/
+  * Brave Clojure has a good crash course: http://www.braveclojure.com/do-things/
   * http://clojure.org/api/cheatsheet is a good reference for syntax.
-  * Lein-droid is a build system for creating Android apps in Clojure: https://github.com/clojure-android/lein-droid/
+* Lein-droid is a build system for creating Android apps in Clojure: https://github.com/clojure-android/lein-droid/
 * GVR is the Cardboard & Daydream framework: https://developers.google.com/vr/android/get-started
 
 ## Steps to write a minimal Cardboard app in Clojure
@@ -26,7 +26,7 @@ This will add the google.bintray.com/googlevr repo and download the sdk-base lib
 
 1. Edit your **src/clojure/my/company/app/main.clj** as desired. **src/clojure/me/sxp/gvrclojure/main.clj** in this repo shows a basic example that renders a different color for each eye in a Cardboard app. Using the Cardboard Trigger input will toggle monoscopic rendering mode.
 1. Run `lein droid doall` as usual to build, install, and run this new app.
-1. Use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) to change the app while it's running. Run `lein droid repl` to launch a Clojure REPL and connect to the app via ADB. Then type the following commands into the prompt and note how the left eye's color changes. Make sure touse the right namespace for the `in-ns` command below. It should match your **main.clj** namespace.
+1. Use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) to change the app while it's running. Run `lein droid repl` to launch a Clojure REPL and connect to the app via ADB. Then type the following commands into the prompt and note how the left eye's color changes. Make sure to use the right namespace for the `in-ns` command below. It should match your **main.clj** namespace.
 
   ```
   REPL-y 0.3.7, nREPL 0.2.10
